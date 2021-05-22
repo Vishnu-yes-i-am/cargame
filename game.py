@@ -103,7 +103,7 @@ while newgame:
         display.blit(font.render("Score: "+str(score),True, black),(850,100))
         display.blit(font.render("High Score: "+str(highscore),True, black),(830,230))
         pygame.display.update()
-        if pygame.Rect(bx,by,200,100).colliderect((xx,yy,160,200)):
+        if pygame.Rect(bx,by,180,270).colliderect((xx,yy,160,200)):
             speed=0
             mixer.music.stop()
             playsound("boom.wav")
