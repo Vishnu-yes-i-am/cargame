@@ -37,7 +37,7 @@ while newgame:
     yy=500
     bx=bx=random.choice([200,400,600])
     r=1
-    by=-100
+    by=-270
     score=0
     speed=7
     rect1=pygame.Rect(812, 0, 400, 780)
@@ -72,7 +72,7 @@ while newgame:
             y3=-100
         display.fill(white)
         if by>700:
-            by=-100
+            by=-270
             score+=1
             bx=random.choice([200,400,600])
             car=pygame.transform.rotate(pygame.image.load(random.choice(cars)),90)
